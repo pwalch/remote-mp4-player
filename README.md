@@ -8,3 +8,7 @@ Remote MP4 player, client + server
 * Put all the files of the directory on a server that runs PHP (like XAMPP).
 * Put MP4 videos in `videos` folder
 * Open `index.html` in your web browser
+
+# License
+
+GPL v3
