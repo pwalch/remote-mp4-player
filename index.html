@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<!--
+Copyright 2014 Pierre Walch
+pwalch.net
+
+  This file is part of RemoteMp4Player.
+
+    RemoteMp4Player is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    RemoteMp4Player is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with RemoteMp4Player.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Remote Media player</title>
+
+    <link rel="stylesheet" type="text/css" href="libs/css/bootstrap.min.css">
+    <script type="text/javascript" src="libs/js/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/js/mousetrap.min.js"></script>
+    
+    <script type="text/javascript" src="src/js/media.js"></script>
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="page-header">
+                <h2>Remote MP4 player <small>pwalch</small></h2>
+            </div>
+        </div>
+
+        <div class="row small-top-margin">
+            <div id="no-video-error-row" class="alert alert-warning error-layout" role="alert">Put videos in "videos/" folder to play.</div>
+        </div>
+
+        <div id="actual-player-row" class="row small-top-margin">
+            <div class="col-md-4">
+                <div id="menu-space" class="menu-space-layout">
+                    <ul id="menu-list" class="nav nav-pills nav-stacked">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div id="video-space" class="video-space-layout">
+                </div>
+
+                <br/>
+
+                <p>
+                    <button id="previous-button" class="btn btn-primary btn-large">Previous (left arrow key)</button>
+                    <button id="shuffle-button" class="btn btn-primary btn-large">Shuffle ("S" key)</button>
+                    <button id="next-button" class="btn btn-primary btn-large">Next (right arrow key)</button>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
